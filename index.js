@@ -22,5 +22,8 @@ app.delete('/wines/:id', wine.deleteWine);
 app.get   ('/dictionaries', dictionary.findAll);
 app.get   ('/getJapanese/:english', dictionary.findByEnglish);
 
-app.listen(3000);
-console.log('Listening on port 3000...');
+//app.listen(3000);
+//app.set('port', process.env.PORT || 8080);
+app.listen(8080);
+//console.log('Listening on port 3000...');
+console.log('Listening on port 8080...');
