@@ -9,6 +9,7 @@ var Schema = mongoose.Schema;
 var DictionarySchema = new Schema({
     english: String
   , japanese: String
+  , url: String
 });
 
 // モデル化。model('[登録名]', '定義したスキーマクラス')
@@ -124,19 +125,23 @@ var populateDB = function() {
     var dictionaries = [
     {
         english: "pen",
-        japanese: "ペン"
+        japanese: "ペン",
+        url: "http://www.fanpop.com/clubs/writing/images/3647581/title/thoughtfull-pen-photo"
     },
     {
         english: "cat",
-        japanese: "猫"
+        japanese: "猫",
+        url: "http://animalblogart.com/cat.html"
     },
     {
         english: "dog",
-        japanese: "犬"
+        japanese: "犬",
+        url: "http://animalblogart.com/cat.html"
     },
     {
         english: "beer",
-        japanese: "ビール"
+        japanese: "ビール",
+        url: "http://www.asahibeer.co.jp/"
     }];
 
   Dictionary.remove(function(err) {

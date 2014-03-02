@@ -11,3 +11,6 @@ http://iwa4.hatenablog.com/entry/2013/07/11/135503
 
 db.dictionaries.save({english:"dog",japanese:"犬"})
 db.dictionaries.save({english:"cat",japanese:"猫"})
+
+
+tar -czf ../vuforiaapp.tar.gz ./*
