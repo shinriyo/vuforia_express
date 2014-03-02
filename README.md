@@ -13,4 +13,12 @@ db.dictionaries.save({english:"dog",japanese:"犬"})
 db.dictionaries.save({english:"cat",japanese:"猫"})
 
 
+URLアクセス例
+---
+http://localhost:1337/dictionary/getJapanese/dog
+
+vuforia.excale.net/getJapanese/pen/
+
+excaleへのアップロード
+--
 tar -czf ../vuforiaapp.tar.gz ./*
